@@ -1,0 +1,75 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+.jobs {
+    padding-left: 6px;
+    background-color: aqua;
+    margin-bottom: 15px;
+    
+}
+.imgjob {
+    width: 98%;
+    
+}
+.btn {
+    position: fixed;
+}
+.detailli {
+    background-color: wheat;
+}
+
+.detailhead {
+    color: red;
+    background-color: white;
+}
+.jobdetails {
+    width: 98%;
+}
+.jobs > p {
+    width: 98%;
+    background-color: white;
+}
+@media screen and (max-width:600px) {
+body {
+    background-color: aqua;
+}
+
+.container {
+    display: block;
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+.jobs {
+    padding-left: 6px;
+    background-color: aqua;
+    margin-bottom: 15px;
+    
+}
+.imgjob {
+    width: 98%;
+    
+}
+
+.btn {
+    position: fixed;
+}
+.detailli {
+    background-color: wheat;
+}
+
+.detailhead {
+    color: red;
+    background-color: white;
+}
+.jobdetails {
+    width: 98%;
+}
+.jobs > p {
+    width: 98%;
+    background-color: white;
+}
+
+
+}

@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mk Graphics</title>
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="/static/index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="bar">
+                <button onclick = "more()"><i class="fa fa-bars"></i></button>
+                <div class="sidecontents" id="sidecontents">
+                    <h2><a href="#intro">About</a></h2> <hr>
+                    <h2><a href="#work">Work</a></h2> <hr>
+                    <h2><a href="#contact">Contact</a></h2>
+                </div>
+            </div>
+        </div>
+        <div class="intro" id="intro">
+            <div class="writeup">
+                <center>
+                    <h2>About Me</h2>
+                <p>
+                    I'm <b>Hammed Abdulmalik Mayowa</b>, a passionate graphic designer with expertise in branding, print and digital design, and illustration. I'm dedicated to crafting visually compelling designs that tell unique stories and resonate with audiences.
+                </p>
+                <p>
+                    What sets me apart as a designer is my commitment to excellence, attention to detail, and dedication to client satisfaction. I approach each project with enthusiasm and a collaborative spirit, working closely with clients to ensure their vision is realized beyond expectations. Whether you're a startup looking to establish your brand or an established business seeking to refresh your image, I'm here to help you stand out in a crowded marketplace with designs that make an impact.
+                </p>
+                </center>
+            </div>
+            <div class="photo">
+                <center>
+                    <img src="/static/maxdesign-web-portfolio-image.jpg" alt="" class="photome">
+                </center>
+                
+            </div>
+
+        </div> <hr>
+
+        <div class="work" id="work">
+            <div class="wk">
+                <center>
+                    <h2>Work</h2>
+                </center>
+                
+            </div>
+            <div class="work_done">
+                <div class="logo_jobs">
+                    <center>
+                        <h1><a href="{% url 'logo' %}" class="workbase">LOGOS</a></h1>
+                    </center>
+                    
+                </div>
+                <div class="flier_jobs">
+                    <center>
+                        <h1><a href="{% url 'flier' %}" class="workbase">FLIERS</a></h1>
+                    </center>
+                    
+                </div>
+                <div class="club_jobs">
+                    <center>
+                        <h1><a href="{% url 'club' %}" class="workbase">CLUB DESIGN</a></h1>
+                    </center>
+                    
+                </div>
+                <div class="company_jobs">
+                    <center>
+                        <h1><a href="{% url 'company' %}" class="workbase">MAGAZINE DESIGN</a></h1>
+                    </center>
+                    
+                </div>
+
+            </div>
+            
+        </div> <hr>
+        <div class="contact" id="contact">
+            <div class="wk">
+                <center>
+                    <h2>Contact</h2>
+                </center>
+                
+            </div>
+
+            <div class="contact_details">
+                <center>
+                    <h2 class="cl">You can reach out to me on the contacts below</h2>
+                </center>
+                <div class="con">
+                    <h3>Phone: <span class="num">+2348166728469</span> </h3>
+                    <h3>Email: <a href="mailto:hammedabdulmalik11@gmail.com" class="num">hammedabdulmalik11@gmail.com</a></h3>
+                    <h3>Whatsapp: <a href="https://wa.me/2348166728469" class="num">Click here to chat me on Whatsapp </a></h3>
+                </div>
+                
+            </div>
+        </div>
+        <div class="foot">
+            Copyright &copy; Maxdesign, 2024.
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
